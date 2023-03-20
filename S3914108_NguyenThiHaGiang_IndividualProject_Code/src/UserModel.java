@@ -1,3 +1,7 @@
+/**
+ * @author Nguyen Thi Ha Giang - S3914108
+ */
+
 public class UserModel {
     private String username;
     private Puzzle gameJoined;

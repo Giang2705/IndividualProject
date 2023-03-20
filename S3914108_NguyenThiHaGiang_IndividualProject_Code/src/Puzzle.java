@@ -1,3 +1,7 @@
+/**
+ * @author Nguyen Thi Ha Giang - S3914108
+ */
+
 import java.util.ArrayList;
 
 public class Puzzle {
@@ -49,9 +53,13 @@ public class Puzzle {
     }
 
     public void display(String choice) {
-        if (choice.toLowerCase().equals("crossword")){
+        if (choice.equalsIgnoreCase("crossword")){
             Crossword crossword = new Crossword();
             crossword.displayBoard();
+        } else if (choice.equalsIgnoreCase("sudoku")){
+            Sudoko sudoko = new Sudoko();
+        } else if (choice.equalsIgnoreCase("trivia")){
+            Trivia trivia = new Trivia();
         }
     }
 

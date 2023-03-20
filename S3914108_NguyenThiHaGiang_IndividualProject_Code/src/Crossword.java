@@ -1,3 +1,7 @@
+/**
+ * @author Nguyen Thi Ha Giang - S3914108
+ */
+
 import java.util.ArrayList;
 
 public class Crossword extends Puzzle {
