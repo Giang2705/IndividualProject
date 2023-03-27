@@ -138,4 +138,16 @@ public class User {
             return true;
         }
     }
+
+    public ArrayList<Product> searchedProducts(String productName, ArrayList<Product> listOfProducts) {
+        ArrayList<Product> searchedList = new ArrayList<Product>();
+
+        for (int i = 0; i < listOfProducts.size(); i++){
+            if (listOfProducts.get(i).getProductName().contains(productName)){
+                searchedList.add(listOfProducts.get(i));
+            }
+        }
+
+        return searchedList;
+    }
 }
