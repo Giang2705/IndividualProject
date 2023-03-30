@@ -8,11 +8,11 @@ public class Digital extends Type{
 
     @Override
     public void setType(String type) {
-        super.setType(type);
+        super.setType("digital");
     }
 
     @Override
     public String getType() {
-        return super.getType();
+        return "digital";
     }
 }

@@ -22,11 +22,11 @@ public class Physical extends Type{
 
     @Override
     public void setType(String type) {
-        super.setType(type);
+        super.setType("physical");
     }
 
     @Override
     public String getType() {
-        return super.getType();
+        return "physical";
     }
 }
