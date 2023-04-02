@@ -5,15 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f2c76f89-e7c2-4a48-b4a1-5827a7e02b61" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/AddedProduct.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Admin.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Cart.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Digital.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Physical.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Product.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Type.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/S3914108_NguyenThiHaGiang_IndividualProject_Code/AddedProduct.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/S3914108_NguyenThiHaGiang_IndividualProject_Code/Admin.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/S3914108_NguyenThiHaGiang_IndividualProject_Code/Admin.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/S3914108_NguyenThiHaGiang_IndividualProject_Code/Cart.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/S3914108_NguyenThiHaGiang_IndividualProject_Code/Cart.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/S3914108_NguyenThiHaGiang_IndividualProject_Code/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/S3914108_NguyenThiHaGiang_IndividualProject_Code/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/S3914108_NguyenThiHaGiang_IndividualProject_Code/Product.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/S3914108_NguyenThiHaGiang_IndividualProject_Code/Product.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AddedProduct.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Admin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Admin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Cart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Cart.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Product.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,18 +40,34 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Giang/Desktop/IndividualProject/S3914108_NguyenThiHaGiang_IndividualProject_Code&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="S3914108_NguyenThiHaGiang_IndividualProject_Code" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -59,6 +77,9 @@
       <option name="presentableId" value="Default" />
       <updated>1680188618518</updated>
       <workItem from="1680188619726" duration="7910000" />
+      <workItem from="1680260323487" duration="3837000" />
+      <workItem from="1680272678824" duration="9401000" />
+      <workItem from="1680433847942" duration="9690000" />
     </task>
     <servers />
   </component>

@@ -47,8 +47,10 @@ public class Admin {
         if(username.equalsIgnoreCase("admin") && password.equalsIgnoreCase("admin123")){
             this.isAdmin = true;
             return true;
+        } else {
+            System.out.println("Wrong username or password. Please try again!");
+            return false;
         }
-        return false;
     }
 
     public boolean isExisted(String productName, ArrayList<Product> listOfProducts){
@@ -73,6 +75,12 @@ public class Admin {
 
         System.out.print("Can it be a gift? (y or n): ");
         String ans = scanner.nextLine();
+
+        while (!ans.equalsIgnoreCase("y") && !ans.equalsIgnoreCase("n")){
+            System.out.print("Please insert y/n: ");
+            ans = scanner.nextLine();
+        }
+
         if (ans.equalsIgnoreCase("y")){
             System.out.println("Input message: ");
             String mess = scanner.nextLine();
@@ -86,9 +94,15 @@ public class Admin {
 
         if (typeName.equalsIgnoreCase("physical")){
             System.out.print("Please set the weight for this product (kg): ");
-            double input = scanner.nextDouble();
-            type = new Physical(input);
-            newProduct.setWeight(input);
+            String input = scanner.nextLine();
+
+            while (!isNumeric(input)){
+                System.out.print("Please input double number for weight: ");
+                input = scanner.nextLine();
+            }
+
+            type = new Physical(Double.parseDouble(input));
+            newProduct.setWeight(Double.parseDouble(input));
             System.out.println(type.getType());
         } else {
             type = new Digital();
@@ -176,5 +190,24 @@ public class Admin {
         }
 
         System.out.println("Update product successfully!");
+    }
+
+    public boolean isNumeric(String string) {
+        if (string == null) {
+            return false;
+        }
+
+        try {
+            int i = Integer.parseInt(string);
+        } catch (Exception exception) {
+            try {
+                double d = Double.parseDouble(string);
+            } catch (NumberFormatException nfe) {
+                return false;
+            }
+        }
+
+
+        return true;
     }
 }

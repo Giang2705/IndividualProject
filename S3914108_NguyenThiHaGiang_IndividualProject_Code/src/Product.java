@@ -14,11 +14,13 @@ public class Product {
     private String message;
     private boolean isGift;
 
+    private double shippingFee;
+
     //    constructor
     public Product() {
 
     }
-    public Product(String productName, String description, Type type, int quantityAvailable, double price, double weight, boolean isGift) {
+    public Product(String productName, String description, Type type, int quantityAvailable, double price, double weight, boolean isGift, double shippingFee) {
         this.productName = productName;
         this.description = description;
         this.type = type;
@@ -26,6 +28,7 @@ public class Product {
         this.price = price;
         this.weight = weight;
         this.isGift = isGift;
+        this.shippingFee = shippingFee;
     }
 
     //    getter and setter
@@ -93,20 +96,28 @@ public class Product {
         isGift = gift;
     }
 
-    public void displayProduct (boolean isAdmin, Product product, ArrayList<Product> listOfProducts, Admin admin){
-        System.out.println("Product's name: " + product.getProductName());
-        System.out.println("Product's description: " + product.getDescription());
-        System.out.println("Product's type: " + product.getType().getType());
-        System.out.println("Product's quantity available: " + product.getQuantityAvailable());
-        System.out.println("Product's price: " + product.getPrice());
-        if(product.getWeight() != 0) {
-            System.out.println("Product's weight: " + product.getWeight());
-        }
-        if (product.isGift()){
-            if(product.getMessage() != "") {
-                System.out.println("Product's message: " + product.getMessage());
-            }
-        }
+    public void setShippingFee(double shippingFee) {
+        this.shippingFee = shippingFee;
+    }
+
+    public double getShippingFee() {
+        return shippingFee;
+    }
+
+    public String toString() {
+        return String.format("Product's name: %s \r\n" +
+                            "Description: %s \r\n" +
+                            "Type: %s \r\n" +
+                            "Price: %s \r\n" +
+                            "Weight: %s \r\n" +
+                            "Message: %s \r\n" +
+                            "Product's quantity available: %s"
+                            ,
+                this.productName, this.description, this.type.getType(), this.price, this.weight, this.message, this.quantityAvailable);
+    }
+
+    public void displayProduct (boolean isAdmin, Product product, ArrayList<Product> listOfProducts, Admin admin, ArrayList<Cart> listOfCarts){
+        System.out.println(this.toString());
 
         boolean isContinue = true;
         if (isAdmin){
@@ -138,21 +149,50 @@ public class Product {
                 String input = scanner.nextLine();
 
                 switch (input.toLowerCase()) {
-                    case "buy":
+                    case "buy" -> {
+                        if (product.getQuantityAvailable() > 0) {
+                            System.out.println("List of carts:");
+                            if (listOfCarts.size() == 0){
+                                System.out.println("There is no cart. Please create cart before buying product.");
+                                break;
+                            } else {
+                                for (int i = 0; i < listOfCarts.size(); i++) {
+                                    System.out.println(i+1 + ". " + listOfCarts.get(i).toString(listOfProducts));
+                                }
+                            }
+                            System.out.print("Please input the name of cart which you want to add product in: ");
+                            String cartName = scanner.nextLine();
+                            boolean existed = true;
 
-                        isContinue = false;
-                        break;
-                    case "back":
+                            for (int i = 0; i < listOfCarts.size(); i++) {
+                                if (cartName.equalsIgnoreCase(listOfCarts.get(i).getName())) {
+                                    if (listOfCarts.get(i).addItem(product.getProductName())) {
+                                        product.setQuantityAvailable(product.getQuantityAvailable() - 1);
+                                        product.setShippingFee(product.getWeight()*0.1);
+                                        listOfCarts.get(i).addItem(product.getProductName());
+                                        System.out.println("Product is added into cart successfully.");
+                                    } else {
+                                        System.out.println("This product already exists in cart");
+                                    }
+                                    existed = true;
+                                } else {
+                                    existed = false;
+                                }
+                            }
 
+                            if (!existed){
+                                System.out.println("There is no cart. Please try again.");
+                                break;
+                            }
+                        } else {
+                            System.out.println("Out of stock");
+                        }
                         isContinue = false;
-                        break;
+                    }
+                    case "back" -> isContinue = false;
                 }
-
-                System.out.println("Please input BUY/BACK");
-
             }
         }
     }
-
 
 }
