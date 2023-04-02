@@ -136,7 +136,7 @@ public class Main {
         }
     }
 
-    public static void adminHomeMenu(Admin admin, ArrayList<Product> listOfProducts) throws IllegalAccessException {
+    public static void adminHomeMenu(Admin admin, ArrayList<Product> listOfProducts) {
         boolean isContinue = true;
 
         while (isContinue){
@@ -242,7 +242,7 @@ public class Main {
             for (int i = 0; i < listOfProducts.size(); i++){
                 if (name.equalsIgnoreCase(listOfProducts.get(i).getProductName())){
                     foundedProduct = listOfProducts.get(i);
-                } else foundedProduct = null;
+                }
             }
 
             if (foundedProduct == null){
