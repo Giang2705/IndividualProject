@@ -5,17 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f2c76f89-e7c2-4a48-b4a1-5827a7e02b61" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/S3914108_NguyenThiHaGiang_IndividualProject_Code/AddedProduct.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/S3914108_NguyenThiHaGiang_IndividualProject_Code/Admin.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/S3914108_NguyenThiHaGiang_IndividualProject_Code/Admin.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/S3914108_NguyenThiHaGiang_IndividualProject_Code/Cart.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/S3914108_NguyenThiHaGiang_IndividualProject_Code/Cart.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/S3914108_NguyenThiHaGiang_IndividualProject_Code/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/S3914108_NguyenThiHaGiang_IndividualProject_Code/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/S3914108_NguyenThiHaGiang_IndividualProject_Code/Product.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/S3914108_NguyenThiHaGiang_IndividualProject_Code/Product.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AddedProduct.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Admin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Admin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Cart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Cart.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Product.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../s3914108_NguyenThiHaGiang_IndividualProject-Code/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../s3914108_NguyenThiHaGiang_IndividualProject-Code/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../s3914108_NguyenThiHaGiang_IndividualProject-Code/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../s3914108_NguyenThiHaGiang_IndividualProject-Code/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../s3914108_NguyenThiHaGiang_IndividualProject-Code/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../s3914108_NguyenThiHaGiang_IndividualProject-Code/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../s3914108_NguyenThiHaGiang_IndividualProject-Code/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../s3914108_NguyenThiHaGiang_IndividualProject-Code/src/main/resources/META-INF/maven/archetype.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../s3914108_NguyenThiHaGiang_IndividualProject-Code/src/main/resources/archetype-resources/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../s3914108_NguyenThiHaGiang_IndividualProject-Code/src/main/resources/archetype-resources/src/main/java/App.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../s3914108_NguyenThiHaGiang_IndividualProject-Code/src/main/resources/archetype-resources/src/test/java/AppTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,6 +80,7 @@
       <workItem from="1680260323487" duration="3837000" />
       <workItem from="1680272678824" duration="9401000" />
       <workItem from="1680433847942" duration="9690000" />
+      <workItem from="1680447914339" duration="253000" />
     </task>
     <servers />
   </component>
